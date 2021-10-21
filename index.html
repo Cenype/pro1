@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/skeleton/2.0.4/skeleton.min.css" integrity="sha512-EZLkOqwILORob+p0BXZc+Vm3RgJBOe1Iq/0fiI7r/wJgzOFZMlsqTa29UEl6v6U6gsV4uIpsNZoV32YZqrCRCQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.4/css/fontawesome.min.css" integrity="sha384-jLKHWM3JRmfMU0A5x5AkjWkw/EYfGUAGagvnfryNV3F9VqM98XiIH7VBGVoxVSc7" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <title>Cecrits</title>
+</head>
+<body>
+    <div class="container">
+        <h1>Cresp Workout Calculator</h1>
+        <form id="workout">
+            <div class="container">
+            <p>Enter your One Rep max for Bench </p>
+            <input type="number" id="bench1" placeholder="Bench Press Max...">
+            <input type="submit"  class="rep-btn1">
+            <p class="message"></p>
+        </div>
+        <div class="container">    
+        <p>Enter your One Rep max for Squats </p>
+            <input type="number" id="squat1" placeholder="Squat Max...">
+            <input type="submit"  id="rep-btn1">
+            <p class="message"></p>
+        </div>
+        <div class="container">
+            <p>Enter your One Rep max for Deadlifts</p>
+            <input type="number" id="dead1" placeholder="Deadlifts Max...">
+            <input type="submit"  class="rep-btn1">
+            <p class="message"></p>
+        </div>
+        <div class="exp">
+        <p>The following numbers given to you are based off your one rep max. These values will show you how much weight you should be training with on a daily basis.</p>
+    </div>
+    </form>
+
+
+    <div id="results" class="pt-4">
+        <h5>Results</h5>
+        <div class="form-group">
+            <div class="inputgroup">
+                <div class="input-group">
+                    <span class="input-group-addon">Three Reps : Training period Bench Press Max:</span>
+                    <input type="number" class="form-control" id="BenchMax" disabled>
+                </div>
+
+            </div>
+            <div class="form-group">
+                <div class="inputgroup">
+                    <div class="input-group">
+                        <span class="input-group-addon">Thee Reps : Training period Squat max:</span>
+                        <input type="number" class="form-control" id="SquatMax" disabled>
+                    </div>
+
+                </div>
+                <div class="form-group">
+                    <div class="inputgroup">
+                        <div class="input-group">
+                            <span class="input-group-addon">Three Reps : Training period Deadlift Max:</span>
+                            <input type="number" class="form-control" id="DeadMax" disabled>
+                        </div>
+                        <ul class="Remove"></ul>
+                        <a href="#" class="Finished btn black">Clear Set</a>
+                    </div>
+      </div>
+      </div>
+  </div>
+</div>
+</div>
+
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ" crossorigin="anonymous"></script>
+    <script src= "app.js"></script>    
+</body>
+</html>
